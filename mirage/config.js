@@ -68,6 +68,6 @@ export default function() {
             },
 
           ]
-      }
+      };
     });
   }
