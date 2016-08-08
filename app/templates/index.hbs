@@ -1,0 +1,22 @@
+<div class="row column">
+<h1>Welcome to This or That</h1>
+
+<h2>Recent Posts</h2>
+
+{{#each model as |post|}}
+  <div class="row">
+    <h3 class="column">{{post.title}}</h3>
+  </div>
+  <div class="row">
+    <div class="small-6 columns">
+      <div>Votes: {{post.votes_image_1}}</div>
+      <img src="{{post.image_url_1}}" alt=""/>
+    </div>
+    <div class="small-6 columns">
+      <div>Votes: {{post.votes_image_2}}</div>
+      <img src="{{post.image_url_2}}" alt=""/>
+    </div>
+  </div>
+{{/each}}
+
+</div>
